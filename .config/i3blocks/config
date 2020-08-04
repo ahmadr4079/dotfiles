@@ -64,6 +64,36 @@ label=BAT
 #label=⚡
 interval=30
 
+[memory]
+command=./scripts/memory/memory
+label=MEM 
+interval=5
+
+[wifi]
+command=./scripts/wifi/wifi
+label=wifi:
+INTERFACE=wlp4s0
+interval=10
+
+[usb]
+command=./scripts/usb/usb
+markup=pango
+signal=1
+interval=10
+#IGNORE_LIST=[]
+#IGNORE_LIST=["sdd1", "mapper/sda1_crypt"]
+#INFO_TEXT_COLOR=white
+#MOUNTED_COLOR=green
+#PLUGGED_COLOR=gray
+#LOCKED_COLOR=gray
+#UNLOCKED_NOT_MOUNTED_COLOR=yellow
+#PARTITIONLESS_COLOR=red
+#PARTITIONLESS_TEXT=no partitions
+#SEPARATOR=<span color='gray'> | </span>
+#LOCKED_INDICATOR= 
+#UNLOCKED_INDICATOR= 
+#READONLY_INDICATOR=ro
+#TRUNCATE_FS_LABELS=[not set by default, accepts +/- integers]
 
 
 # Date Time
@@ -86,12 +116,6 @@ interval=1
 # The type defaults to "mem" if the instance is not specified.
 [memory]
 label=MEM
-separator=false
-interval=30
-
-[memory]
-label=SWAP
-instance=swap
 separator=false
 interval=30
 
