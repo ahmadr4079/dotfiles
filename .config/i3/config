@@ -213,6 +213,6 @@ exec_always nitrogen --head=1 --set-auto --restore
 
 
 # Key layout
-exec setxkbmap -layout us,ir -option "grp:alt_shift_toggle"
+exec_always setxkbmap -layout us,ir -option "grp:alt_shift_toggle"
 
 
