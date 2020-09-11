@@ -16,8 +16,8 @@ set $mod Mod4
 font pango:Inconsolata Medium 10
 
 # Fix Monitors Desktop
-exec_always xrandr --output HDMI2 --mode 1360x768 --right-of eDP1
-exec_always xrandr --output eDP1 --mode 1920x1080 --left-of HDMI2
+exec_always xrandr --output HDMI2 --mode 1360x768 --left-of eDP1
+exec_always xrandr --output eDP1 --mode 1920x1080 --right-of HDMI2
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

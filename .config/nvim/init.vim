@@ -6,6 +6,8 @@ set encoding=utf-8
 
 set shiftwidth=4
 "set expandtab
+"
+set termbidi
 
 syntax enable
 
