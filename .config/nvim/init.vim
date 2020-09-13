@@ -70,10 +70,16 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'sickill/vim-monokai'
 Plug 'luochen1990/rainbow'
 Plug 'vim-syntastic/syntastic'
 Plug 'jnurmine/Zenburn'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'morhetz/gruvbox'
+Plug 'davidhalter/jedi-vim'
+Plug 'Yggdroot/indentLine'
 Plug 'altercation/vim-colors-solarized'
+Plug 'dense-analysis/ale'
 "Plug 'jmcantrell/vim-virtualenv'
 call plug#end()
 
@@ -96,11 +102,11 @@ let python_highlight_all=1
 syntax on
 
 
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
+set background=dark
+colorscheme gruvbox
+set notermguicolors
 
+:let g:NERDTreeWinSize=50
 
+let g:ale_fixers = {'python': ['autopep8', 'black', 'isort']}
+let g:ale_fix_on_save = 1
