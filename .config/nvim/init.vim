@@ -75,11 +75,14 @@ Plug 'luochen1990/rainbow'
 Plug 'vim-syntastic/syntastic'
 Plug 'jnurmine/Zenburn'
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'tpope/vim-commentary'
 Plug 'morhetz/gruvbox'
+Plug 'sheerun/vim-polyglot'
 Plug 'davidhalter/jedi-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dense-analysis/ale'
+Plug 'vim-python/python-syntax'
 "Plug 'jmcantrell/vim-virtualenv'
 call plug#end()
 
@@ -98,9 +101,8 @@ let g:airline_theme='dark'
 "let g:rainbow_active = 1
 
 
-let python_highlight_all=1
+let g:python_highlight_all = 1
 syntax on
-
 
 set background=dark
 colorscheme gruvbox
@@ -109,4 +111,7 @@ set notermguicolors
 :let g:NERDTreeWinSize=50
 
 let g:ale_fixers = {'python': ['autopep8', 'black', 'isort']}
+let g:ale_linters = {'python': ['pylint']}
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_save = 1
+
