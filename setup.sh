@@ -1,4 +1,4 @@
-FILES=".config/nvim .config/i3 .config/i3blocks"
+FILES=".config/nvim .config/i3 .config/i3blocks .config/dunst"
 
 BASE=$(dirname $(readlink -f $0))
 

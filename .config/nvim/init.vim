@@ -5,14 +5,9 @@ set clipboard+=unnamedplus
 set encoding=utf-8
 
 set shiftwidth=4
-"set expandtab
-"
 set termbidi
 
 syntax enable
-
-"colorscheme default
-"set background=dark
 
 set number
 
@@ -60,7 +55,6 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 
 
 " Use C-L to clear search highlights
-"
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 
@@ -70,20 +64,13 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
-Plug 'sickill/vim-monokai'
-Plug 'luochen1990/rainbow'
-Plug 'vim-syntastic/syntastic'
-Plug 'jnurmine/Zenburn'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'tpope/vim-commentary'
 Plug 'morhetz/gruvbox'
-Plug 'sheerun/vim-polyglot'
+Plug 'lepture/vim-jinja'
 Plug 'davidhalter/jedi-vim'
 Plug 'Yggdroot/indentLine'
-Plug 'altercation/vim-colors-solarized'
 Plug 'dense-analysis/ale'
-Plug 'vim-python/python-syntax'
-"Plug 'jmcantrell/vim-virtualenv'
 call plug#end()
 
 
@@ -96,12 +83,6 @@ nnoremap <F3> :NERDTreeTabsToggle<CR>
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
 
-
-"Rainbow
-"let g:rainbow_active = 1
-
-
-let g:python_highlight_all = 1
 syntax on
 
 set background=dark
@@ -115,3 +96,6 @@ let g:ale_linters = {'python': ['pylint']}
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
 
+" enable 256 colors
+set t_Co=256
+set t_ut=
