@@ -35,8 +35,7 @@ markup=none
 # See the script for details.
 [volume]
 command=./scripts/volume/volume
-# label=♪ 
-label=VOL 
+label= 
 interval=1
 signal=10
 #STEP=5%
@@ -47,7 +46,7 @@ signal=10
 # see the script for details.
 [cpu_usage]
 command=./scripts/cpu_usage/cpu_usage
-label=CPU 
+label= 
 interval=5
 # min_width=CPU 100.00%
 #separator=true
@@ -60,18 +59,17 @@ interval=2
 # The battery instance defaults to 0.
 [battery]
 command=./scripts/battery/battery
-label=BAT 
-#label=⚡
+label= 
 interval=30
 
 [memory]
 command=./scripts/memory/memory
-label=MEM 
+label= 
 interval=5
 
 [wifi]
 command=./scripts/wifi/wifi
-label=wifi:
+label= 
 INTERFACE=wlp4s0
 interval=10
 
