@@ -63,6 +63,9 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# start morc_menue
+bindsym $mod+z exec morc_menu
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
